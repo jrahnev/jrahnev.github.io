@@ -19,6 +19,7 @@ html {
   display: inline;
   margin-left: 8%;
   margin-top: 10%;
+  float:left;
 }
 #header_one, #header_two, #header_three {
   color: blueviolet;
