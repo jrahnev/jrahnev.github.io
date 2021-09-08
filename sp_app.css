@@ -1,6 +1,10 @@
 html {
   background-color: beige;
 }
+#currency_header {
+  margin-left: 8%;
+  color: maroon;
+}
 #drop {
   margin-left: 8%;
   margin-top: 2%;
