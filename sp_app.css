@@ -7,11 +7,13 @@ html {
 }
 #currency_header h1 {
   color:maroon;
+  display:inline;
 }
 #drop {
   margin-left: 8%;
   margin-top: 2%;
   float: left;
+  display:inline;
 }
 #one, #two, #three {
   display: inline;
