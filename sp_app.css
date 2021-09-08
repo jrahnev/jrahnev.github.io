@@ -17,7 +17,6 @@ html {
 }
 #one, #two, #three {
   display: inline;
-  float:left;
   margin-left: 8%;
   margin-top: 15%;
 }
