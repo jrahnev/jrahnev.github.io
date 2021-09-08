@@ -87,13 +87,9 @@ document.addEventListener("DOMContentLoaded", function(){
       .then(data => {
       console.log(data)
 
-      const currencies = ["usd", "eur", "aud","cad","chf", "nzd", "bgn"]
-
-      let group_1 = [];
-      let group_2 = [];
-      let group_3 = [];
-
-      let pair;
+      group_1 = [];
+      group_2 = [];
+      group_3 = [];
 
       for (currency of currencies) {
 
