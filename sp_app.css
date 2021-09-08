@@ -4,10 +4,10 @@ html {
 #currency_header {
   margin-left: 8%;
   float: left;
+  display:inline;
 }
 #currency_header h1 {
   color:maroon;
-  display:inline;
 }
 #drop {
   margin-left: 8%;
