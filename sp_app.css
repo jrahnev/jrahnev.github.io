@@ -1,0 +1,28 @@
+html {
+  background-color: beige;
+}
+#drop {
+  margin-left: 8%;
+  margin-top: 2%;
+}
+#one, #two, #three {
+  display: inline;
+  float:left;
+  margin-left: 8%;
+  margin-top: 15%;
+}
+#header_one, #header_two, #header_three {
+  color: blueviolet;
+  padding: 1px;
+}
+#count_1, #count_2, #count_3 {
+  color:maroon;
+}
+ul {
+  list-style-type: none;
+  padding-left:0;
+}
+select {
+  width: 150px;
+  height: 30px;
+}
