@@ -3,7 +3,10 @@ html {
 }
 #currency_header {
   margin-left: 8%;
-  color: maroon;
+  floating: left;
+}
+h1 {
+  color:maroon;
 }
 #drop {
   margin-left: 8%;
