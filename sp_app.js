@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function(){
 
-  document.querySelector("select").onclick = function () {
+  document.querySelector("select").onchange = function () {
 
     document.querySelectorAll('li').forEach((elem) => elem.remove());
 
