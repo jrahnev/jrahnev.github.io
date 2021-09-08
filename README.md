@@ -1,1 +1,1 @@
-# jrahnev.github.io
+# jrahnev.github.io/currency
