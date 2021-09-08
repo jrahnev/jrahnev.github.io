@@ -70,14 +70,6 @@ document.addEventListener("DOMContentLoaded", function(){
         document.querySelector('#header_three').innerHTML = 'Group 3';
         document.querySelector('#count_3').innerHTML = `Count: ${group_3.length}`;
 
-
-
-
-        console.log(group_1, group_1[0].rate)
-        console.log(group_2, group_2.length)
-        console.log(group_3, group_3.length)
-
-}
-  )
-}
+        })
+    }
 });
