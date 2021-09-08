@@ -11,6 +11,7 @@ html {
 #drop {
   margin-left: 8%;
   margin-top: 2%;
+  float: left;
 }
 #one, #two, #three {
   display: inline;
