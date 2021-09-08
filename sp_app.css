@@ -1,10 +1,11 @@
+
 html {
   background-color: beige;
 }
 #currency_header {
-  margin-left: 8%;
   float: clear;
-  display:inline;
+  margin-top: 2%;
+  margin-left: 8%;
 }
 #currency_header h1 {
   color:orange;
@@ -12,8 +13,6 @@ html {
 #drop {
   margin-left: 8%;
   margin-top: 2%;
-  float: left;
-  display:inline;
 }
 #one, #two, #three {
   display: inline;
