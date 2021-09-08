@@ -3,7 +3,7 @@ html {
 }
 #currency_header {
   margin-left: 8%;
-  float: left;
+  float: clear;
   display:block;
 }
 #currency_header h1 {
