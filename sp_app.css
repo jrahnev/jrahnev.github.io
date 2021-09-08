@@ -18,7 +18,7 @@ html {
 #one, #two, #three {
   display: inline;
   margin-left: 8%;
-  margin-top: 15%;
+  margin-top: 10%;
 }
 #header_one, #header_two, #header_three {
   color: blueviolet;
