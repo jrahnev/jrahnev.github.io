@@ -4,7 +4,7 @@ html {
 #currency_header {
   margin-left: 8%;
   float: left;
-  display:inline;
+  display:block;
 }
 #currency_header h1 {
   color:maroon;
@@ -13,7 +13,7 @@ html {
   margin-left: 8%;
   margin-top: 2%;
   float: left;
-  display:inline;
+  display:block;
 }
 #one, #two, #three {
   display: inline;
