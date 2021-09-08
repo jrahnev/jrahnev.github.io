@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function(){
     document.querySelectorAll('li').forEach((elem) => elem.remove());
 
     let rate = this.value;
+    
+    document.querySelector("h1").innerHTML = `${rate}`
 
     fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${rate}.json`)
       .then(response => response.json())
