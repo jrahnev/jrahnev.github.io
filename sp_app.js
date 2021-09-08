@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function(){
     console.log(data)
 
     let rate = "usd"
+    
+    document.querySelector("h1").innerHTML = "USD";
 
     let group_1 = [];
     let group_2 = [];
