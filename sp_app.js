@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", function(){
       let pair;
 
       for (currency of currencies) {
+        
+        if (rate != currency) {
 
         let num = data[rate][currency]
 
@@ -38,6 +40,8 @@ document.addEventListener("DOMContentLoaded", function(){
             group_3.push(pair)
           }
         }
+        
+      }
 
         group_1.sort((a, b) => (a.rate) - (b.rate));
         group_2.sort((a, b) => (a.rate) - (b.rate));
