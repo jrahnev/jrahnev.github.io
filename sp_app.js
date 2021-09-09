@@ -21,11 +21,11 @@ document.addEventListener("DOMContentLoaded", function(){
     	def_group(rate, num, group_1,group_2,group_3);
     }
 
-	  sort_and_create(group_1,group_2,group_3);
+    sort_and_create(group_1,group_2,group_3);
 	 
     displ_group(group_1,group_2,group_3);
 
-  	document.querySelector("select").onchange = function () {
+  document.querySelector("select").onchange = function () {
 
     document.querySelectorAll('li').forEach((elem) => elem.remove());
 
