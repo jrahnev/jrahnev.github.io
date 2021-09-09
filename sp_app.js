@@ -7,13 +7,16 @@ document.addEventListener("DOMContentLoaded", function(){
 
     let rate = "usd"
     
-    document.querySelector("h1").innerHTML = `${rate.toUpperCase()}`
+    document.querySelector("h1").innerHTML = "USD";
 
     let group_1 = [];
     let group_2 = [];
     let group_3 = [];
+
     const currencies = ["usd", "eur", "aud","cad","chf", "nzd", "bgn"]
+
     let pair;
+    
     let num;
     
     for (currency of currencies) { 
@@ -21,11 +24,13 @@ document.addEventListener("DOMContentLoaded", function(){
     	def_group(rate, num, group_1,group_2,group_3);
     }
 
-    sort_and_create(group_1,group_2,group_3);
+    sort_and_create(group_1,"gr1");
+    sort_and_create(group_2,"gr2");
+    sort_and_create(group_3,"gr3");
 	 
     displ_group(group_1,group_2,group_3);
 
-  document.querySelector("select").onchange = function () {
+    document.querySelector("select").onchange = function () {
 
     document.querySelectorAll('li').forEach((elem) => elem.remove());
 
@@ -47,38 +52,25 @@ document.addEventListener("DOMContentLoaded", function(){
     	def_group(rate, num, group_1,group_2,group_3);
     	}
 
-    sort_and_create(group_1,group_2,group_3);
+    sort_and_create(group_1,"gr1");
+    sort_and_create(group_2,"gr2");
+    sort_and_create(group_3,"gr3");
 
-	  displ_group(group_1,group_2,group_3);
+    displ_group(group_1,group_2,group_3);
 		
       })
     }
 });
 
-	function sort_and_create(group_1,group_2,group_3) {
+	function sort_and_create(group,idName) {
 
-		  group_1.sort((a, b) => (a.rate) - (b.rate));
-		  group_2.sort((a, b) => (a.rate) - (b.rate));
-		  group_3.sort((a, b) => (a.rate) - (b.rate));
-
-		  for (i of group_1){
+		  group.sort((a, b) => (a.rate) - (b.rate));
+		  
+		  for (i of group){
 		    let new_elem = document.createElement("li")
 		    new_elem.innerHTML = `${i.pair}:${i.rate}`
-		    document.querySelector("#gr1").appendChild(new_elem);
+		    document.querySelector(`#${idName}`).appendChild(new_elem);
 		  }
-
-		  for (i of group_2){
-		    let new_elem = document.createElement("li")
-		    new_elem.innerHTML = `${i.pair}:${i.rate}`
-		    document.querySelector("#gr2").appendChild(new_elem);
-		  }
-
-		  for (i of group_3){
-		    let new_elem = document.createElement("li")
-		    new_elem.innerHTML = `${i.pair}:${i.rate}`
-		    document.querySelector("#gr3").appendChild(new_elem);
-		  }
-      
       }
 
 	function displ_group(group_1,group_2,group_3){
@@ -93,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function(){
 		    document.querySelector('#count_3').innerHTML = `Count: ${group_3.length}`;
         }
 
-	function def_group(rate, num,group_1,group_2,group_3) {
+	function def_group(rate, num,group_1,group_2,group_3){
     
 		if (rate != currency) {
 
@@ -111,7 +103,7 @@ document.addEventListener("DOMContentLoaded", function(){
 		      group_3.push(pair)
 		    }
 		}
+      }
    }
- }
-})
 
+})
