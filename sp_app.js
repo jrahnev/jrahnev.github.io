@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     let rate = "usd"
     
-    document.querySelector("h1").innerHTML = "USD";
+    document.querySelector("h1").innerHTML = `${rate.toUpperCase()}`
 
     let group_1 = [];
     let group_2 = [];
