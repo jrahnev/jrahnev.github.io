@@ -20,11 +20,11 @@ html {
   margin-top: 10%;
   float:left;
 }
-#header_one, #header_two, #header_three {
+#header_group_1, #header_group_2, #header_group_3 {
   color: blueviolet;
   padding: 1px;
 }
-#count_1, #count_2, #count_3 {
+#count_group_1, #count_group_2, #count_group_3 {
   color:maroon;
 }
 ul {
