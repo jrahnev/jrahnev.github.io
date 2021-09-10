@@ -24,14 +24,14 @@ document.addEventListener("DOMContentLoaded", function(){
     	def_group(rate, num);
     }
 
-	  sort_and_create(group_1,"gr1");
-    sort_and_create(group_2,"gr2");
-    sort_and_create(group_3,"gr3");
+	  sort_and_create(group_1,"group_1");
+    sort_and_create(group_2,"group_2");
+    sort_and_create(group_3,"group_3");
 
     displ_group(group_1,"group_1");
     displ_group(group_2,"group_2");
     displ_group(group_3,"group_3");
-	  
+
 document.querySelector("select").onchange = function () {
 
     document.querySelectorAll('li').forEach((elem) => elem.remove());
@@ -54,9 +54,9 @@ document.querySelector("select").onchange = function () {
     	def_group(rate, num);
     	}
 
-    sort_and_create(group_1,"gr1");
-    sort_and_create(group_2,"gr2");
-    sort_and_create(group_3,"gr3");
+    sort_and_create(group_1,"group_1");
+    sort_and_create(group_2,"group_2");
+    sort_and_create(group_3,"group_3");
 
     displ_group(group_1,"group_1");
     displ_group(group_2,"group_2");
