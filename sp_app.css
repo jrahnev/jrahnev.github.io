@@ -1,0 +1,37 @@
+
+html {
+  background-color: beige;
+}
+#currency_header {
+  float: clear;
+  margin-top: 2%;
+  margin-left: 8%;
+}
+#currency_header h1 {
+  color:orange;
+}
+#drop {
+  margin-left: 8%;
+  margin-top: 2%;
+}
+#one, #two, #three {
+  display: inline;
+  margin-left: 8%;
+  margin-top: 10%;
+  float:left;
+}
+#header_group_1, #header_group_2, #header_group_3 {
+  color: blueviolet;
+  padding: 1px;
+}
+#count_group_1, #count_group_2, #count_group_3 {
+  color:maroon;
+}
+ul {
+  list-style-type: none;
+  padding-left:0;
+}
+select {
+  width: 150px;
+  height: 30px;
+}
