@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(){
     	def_group(rate, num);
     }
 
-	  sort_and_create(group_1,"group_1");
+    sort_and_create(group_1,"group_1");
     sort_and_create(group_2,"group_2");
     sort_and_create(group_3,"group_3");
 
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function(){
     displ_group(group_2,"group_2");
     displ_group(group_3,"group_3");
 
-  	document.querySelector("select").onchange = function () {
+  document.querySelector("select").onchange = function () {
 
     document.querySelectorAll('li').forEach((elem) => elem.remove());
 
@@ -65,41 +65,42 @@ document.addEventListener("DOMContentLoaded", function(){
   })
 }
 
-	function sort_and_create(group,idName) {
+function sort_and_create(group,idName) {
 
-		  group.sort((a, b) => (a.rate) - (b.rate));
+	group.sort((a, b) => (a.rate) - (b.rate));
 
-		  for (i of group){
-		    let new_elem = document.createElement("li")
-		    new_elem.innerHTML = `${i.pair}:${i.rate}`
-		    document.querySelector(`#${idName}`).appendChild(new_elem);
-		  }
-  }
+	for (i of group){
+	let new_elem = document.createElement("li")
+	new_elem.innerHTML = `${i.pair}:${i.rate}`
+	document.querySelector(`#${idName}`).appendChild(new_elem);
+	}
+}
 
-	function displ_group(group,str){
-        for (i of group){
-		        document.querySelector(`#header_${str}`).innerHTML = `${i.group}`;
+function displ_group(group,str){
+	
+	for (i of group){
+		document.querySelector(`#header_${str}`).innerHTML = `${i.group}`;
         }
-		    document.querySelector(`#count_${str}`).innerHTML = `Count: ${group.length}`;
-  }
+		document.querySelector(`#count_${str}`).innerHTML = `Count: ${group.length}`;
+}
 
-	function def_group(rate, num){
+function def_group(rate, num){
 
-		if (rate != currency) {
+	if (rate != currency) {
 
-		    if (num < 1) {
-		      pair = {"group":"Group 1","pair":`${rate.toUpperCase()}-${currency.toUpperCase()}`, "rate":num.toFixed(3)}
-		      group_1.push(pair)
-		    }
-		    else if (num >= 1 && num <= 1.5){
-		      pair = {"group":"Group 2","pair":`${rate.toUpperCase()}-${currency.toUpperCase()}`, "rate":num.toFixed(3)}
-		      group_2.push(pair)
-		    }
-		    else {
-		      pair = {"group":"Group 3","pair":`${rate.toUpperCase()}-${currency.toUpperCase()}`, "rate":num.toFixed(3)}
-		      group_3.push(pair)
-		    }
-    }
+		if (num < 1) {
+			pair = {"group":"Group 1","pair":`${rate.toUpperCase()}-${currency.toUpperCase()}`, "rate":num.toFixed(3)}
+		      	group_1.push(pair)
+		}
+		else if (num >= 1 && num <= 1.5){
+			pair = {"group":"Group 2","pair":`${rate.toUpperCase()}-${currency.toUpperCase()}`, "rate":num.toFixed(3)}
+		      	group_2.push(pair)
+		}
+		else {
+			pair = {"group":"Group 3","pair":`${rate.toUpperCase()}-${currency.toUpperCase()}`, "rate":num.toFixed(3)}
+		      	group_3.push(pair)
+		}
+    	}
    }
   })
 });
