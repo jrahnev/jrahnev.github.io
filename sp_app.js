@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
   document.querySelector("select").onchange = function () {
 
-    document.querySelectorAll('li').forEach((elem) => elem.remove());
+    document.querySelectorAll('ul').forEach((elem) => elem.innerHTML = "";);
 
     rate = this.value;
 
